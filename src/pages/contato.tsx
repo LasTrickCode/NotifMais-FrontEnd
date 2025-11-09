@@ -4,6 +4,7 @@ export function Contato() {
   return (
     <div className="flex flex-col w-full h-[80vh] items-center text-center justify-center gap-16">
       <h1 className="text-5xl title font-bold">Contato</h1>
+      <p>Email: richardemiliano9@gmail.com</p>
       <Link
         to="https://github.com/LasTrickCode"
         target="_blank"
