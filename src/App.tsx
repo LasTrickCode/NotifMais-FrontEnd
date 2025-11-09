@@ -28,7 +28,38 @@ function PrivateRoute({ children }: PrivateRouteProps) {
 // App principal com contexto e rotas
 function App() {
   return (
-   a
+   
+    <AuthProvider>
+      <BrowserRouter>
+        <ErrorBoundary FallbackComponent={Fallback}>
+          <Suspense fallback={<Loading />}>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                {/* 🔐 Página inicial protegida */}
+                <Route
+                  index
+                  element={
+                    <PrivateRoute>
+                      <Home />
+                    </PrivateRoute>
+                  }
+                />
+
+              
+               
+                <Route path="*" element={<NotFound />} />
+                <Route path="/sobre" element={<Sobre />} />
+                <Route path="/integrantes" element={<Integrantes />} />
+                <Route path="/contato" element={<Contato />} />
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/login" element={<Login />} />
+              </Route>
+            </Routes>
+          </Suspense>
+        </ErrorBoundary>
+      </BrowserRouter>
+    </AuthProvider>
+  
   );
 }
 
