@@ -28,7 +28,7 @@ function PrivateRoute({ children }: PrivateRouteProps) {
 // App principal com contexto e rotas
 function App() {
   return (
-   
+   a
   );
 }
 
