@@ -1,6 +1,6 @@
-# Challenge Entrega 3 – Sprint
+# Challenge Entrega 4 – Sprint
 
-> Sistema desenvolvido no contexto da entrega da terceira sprint — gerenciador de lembretes / consultas médicas / sistema de notificações e sessões.
+> Sistema desenvolvido no contexto da entrega da quarta sprint — gerenciador de lembretes / consultas médicas / sistema de notificações e sessões.
 
 ---
 
@@ -28,10 +28,11 @@
 Aqui está a estrutura do repositório 
 
 ├── src
-│ ├── components
-│ ├── pages
+│ ├── api
+│ ├── context
+│ ├── components 
 │ ├── routes
-│ ├── styles
+│ ├── pages
 │ ├── types
 │ ├── App.tsx
 │ └── main.tsx
@@ -54,14 +55,14 @@ Aqui está a estrutura do repositório
 
   Acesse no navegador
 
+   Vercel:
+   https://notifmaisfrontend.vercel.app
  
   Confira o vídeo demonstrativo do sistema no YouTube:
-   https://youtu.be/pwfYuXRbkQ8
+   [https://youtu.be/pwfYuXRbkQ8](https://youtu.be/yPdbNjSrgLE)
 
   📝 Descrição das Funcionalidades
 
-  Cadastro de Notificações (tipo de consulta, data)
-
-  Listagem de Notificações já criadas
-
-  Navegação entre telas (formulário, listagem, detalhes)
+  Seleção de usuarios da API   
+  Listagem de Notificações já criadas pela API
+  Navegação e atualização entre telas (formulário, listagem, detalhes)
